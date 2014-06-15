@@ -1,18 +1,15 @@
 angular.module('starter.controllers', [])
 
+.controller('StatusCtrl', function($scope) {
+})
 .controller('AppCtrl', function($scope) {
 })
-
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('BrowseCtrl', function($scope) {
+})
+.controller('SyncCtrl', function($scope) {
+})
+.controller('SettingsCtrl', function($scope) {
+})
+.controller('InfoCtrl', function($scope) {
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-})
