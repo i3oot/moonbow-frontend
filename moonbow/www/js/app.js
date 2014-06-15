@@ -64,11 +64,37 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/settings.html",
-          controller: 'SettingsCtrl'
         }
       }
     })
-    .state('app.info', {
+    .state('app.AccountSettings', {
+      url: "/settings/account",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/settings/accountSettings.html",
+          controller: 'AccountSettingsCtrl'
+        }
+      }
+    })
+    .state('app.DeviceSettings', {
+        url: "/settings/device",
+      views: {
+        'menuContent' :{
+            templateUrl: "templates/settings/deviceSettings.html"
+        }
+      }
+    })
+  
+  .state('app.WifiSettings', {
+      url: "/settings/wifi",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/settings/wifiSettings.html",
+          controller: 'WifiSettingsCtrl'
+        }
+      }
+    })
+   .state('app.info', {
       url: "/info",
       views: {
         'menuContent' :{

@@ -8,7 +8,11 @@ angular.module('starter.controllers', [])
 })
 .controller('SyncCtrl', function($scope) {
 })
-.controller('SettingsCtrl', function($scope) {
+.controller('DeviceSettingsCtrl', function($scope) {
+})
+.controller('AccountSettingsCtrl', function($scope) {
+})
+.controller('WifiSettingsCtrl', function($scope) {
 })
 .controller('InfoCtrl', function($scope) {
 })
@@ -16,7 +20,7 @@ angular.module('starter.controllers', [])
 .directive('todo', function () {
     return {
         restrict: 'A',
-        link: function (scope, element, attr) {
+        link: function (scope, element) {
             element.bind('click', function (e) {
                 e.stopPropagation();
                 e.preventDefault();
