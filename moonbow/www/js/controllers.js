@@ -13,3 +13,16 @@ angular.module('starter.controllers', [])
 .controller('InfoCtrl', function($scope) {
 })
 
+.directive('todo', function () {
+    return {
+        restrict: 'A',
+        link: function (scope, element, attr) {
+            element.bind('click', function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+                alert("This is not implemented yet.");
+            });
+            element.addClass('hidden');
+        }
+    };
+ });
